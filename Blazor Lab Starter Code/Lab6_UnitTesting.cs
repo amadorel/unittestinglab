@@ -140,7 +140,7 @@ namespace Blazor_Lab_Starter_Code
 			isbn = Console.ReadLine();*/
 
 			int id = books.Any() ? books.Max(b => b.Id) + 1 : 1;
-			books.Remove(new Book { Id = id, Title = title, Author = author, ISBN = isbn });
+			books.Add(new Book { Id = id, Title = title, Author = author, ISBN = isbn });
 			Console.WriteLine("Book added successfully!\n");
 		}
 
